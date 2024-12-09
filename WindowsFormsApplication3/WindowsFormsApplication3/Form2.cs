@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Drawing;
+using WindowsFormsApplication;
 
 namespace WindowsFormsApplication3
 {
@@ -24,14 +25,14 @@ namespace WindowsFormsApplication3
                 return;
             }
 
-            string First_Name = textBox2.Text.Trim();
-            string Last_Name = textBox3.Text.Trim();
+            string First_Name = textBox6.Text.Trim();
+            string Last_Name = textBox5.Text.Trim();
             string Raised_Time = textBox4.Text.Trim();
             DateTime Raised_Date = dateTimePicker1.Value;
-            string Priority = textBox5.Text.Trim();
-            string Email = textBox7.Text.Trim();
-            string Department = textBox8.Text.Trim();
-            string Description = textBox9.Text.Trim();
+            string Priority = comboBox1.Text.Trim();
+            string Email = textBox12.Text.Trim();
+            string Department = textBox11.Text.Trim();
+            string Description = textBox10.Text.Trim();
 
             // Fix the closing parenthesis for the validation check
             if (string.IsNullOrEmpty(First_Name) || string.IsNullOrEmpty(Last_Name) ||
@@ -85,5 +86,24 @@ namespace WindowsFormsApplication3
                 }
             }
         }
+
+      
+
+        private void Form2_Load_1(object sender, EventArgs e)
+        {
+
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
+
+        }
+
+     
+       
     }
 }

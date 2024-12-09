@@ -6,10 +6,10 @@ using System.Drawing;
 
 namespace WindowsFormsApplication
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
 
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
             lblErrorMessage.Visible = false;
@@ -17,15 +17,16 @@ namespace WindowsFormsApplication
 
         
         string connectionString = "Data Source=LAPTOP-6QVJ4QJ9\\SQLEXPRESS01;Initial Catalog=Test;Integrated Security=True;";
-         private void button1_Click_1(object sender, EventArgs e)
+        
+         private void button1_Click(object sender, EventArgs e)
         {
 
     
     string userName = name.Text.Trim();
     string password = pwd.Text.Trim();
 
-    
-    string query = "SELECT COUNT(1) FROM [dbo].[Login] WHERE User_Name = @UserName AND Password = @Password";
+
+    string query = "SELECT COUNT(1) FROM [dbo].[Admin_Ticket] WHERE User_Name = @UserName AND Password = @Password";
     using (SqlConnection conn = new SqlConnection(connectionString))
     {
         SqlCommand cmd = new SqlCommand(query, conn);
@@ -39,12 +40,12 @@ namespace WindowsFormsApplication
             if (count == 1)
             {
 
-                UserSession.UserName = userName;
+                UserSession1.UserName = userName;
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide();
-                Form2 form2 = new Form2();
-                form2.Show();
+                Form5 form5 = new Form5();
+                form5.Show();
 
 
             }
@@ -65,23 +66,32 @@ namespace WindowsFormsApplication
          private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
          {
              this.Hide();
-             Form3 form3 = new Form3();
-             form3.Show();
+             Form1 form1 = new Form1();
+             form1.Show();
 
+         }
+
+
+         public static class UserSession1
+         {
+             public static string UserName { get; set; }
          }
 
          private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
          {
              this.Hide();
-             VerifiedLogin VerifiedLogin = new VerifiedLogin();
-             VerifiedLogin.Show();
+             Form4 form4 = new Form4();
+             form4.Show();
 
+            
          }
 
-         private void Form1_Load(object sender, EventArgs e)
+         private void Form3_Load(object sender, EventArgs e)
          {
              panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
          }
+
+       
 
        
 
@@ -89,13 +99,20 @@ namespace WindowsFormsApplication
        
 
         }
-public static class UserSession
-{
-    public static string UserName { get; set; }
-}
 
-
-      
-            
     
 
+
+
+
+
+
+
+
+
+
+
+ 
+          
+
+ 

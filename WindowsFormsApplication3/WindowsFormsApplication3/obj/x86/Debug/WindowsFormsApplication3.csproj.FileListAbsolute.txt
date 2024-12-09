@@ -8,3 +8,7 @@ C:\Users\Icege\OneDrive\文件\Visual Studio 2010\Projects\WindowsFormsApplicati
 C:\Users\Icege\OneDrive\文件\Visual Studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form2.resources
 C:\Users\Icege\OneDrive\文件\Visual Studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
 C:\Users\Icege\OneDrive\文件\Visual Studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication.Form1.resources
+C:\Users\Icege\OneDrive\文件\Visual Studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication.Form3.resources
+C:\Users\Icege\onedrive\文件\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form5.resources
+C:\Users\Icege\onedrive\文件\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form4.resources
+C:\Users\Icege\onedrive\文件\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Verified_Login.resources

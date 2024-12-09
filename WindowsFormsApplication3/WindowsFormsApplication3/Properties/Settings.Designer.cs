@@ -33,5 +33,15 @@ namespace WindowsFormsApplication3.Properties {
                 return ((string)(this["TestConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\\Test.sdf;Max Database Size=2047")]
+        public string ClientTestConnectionString {
+            get {
+                return ((string)(this["ClientTestConnectionString"]));
+            }
+        }
     }
 }
